@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function MainSection() {
 	return (
-		<main className='px-4 md:px-8 py-20 my-12 lg:px-40 lg:my-20'>
+		<main className='px-4 py-20 my-12 md:px-8 lg:px-40 lg:my-20'>
 			<div className='md:hidden'>
 				<Image
 					src='/mobile/image-grid-1.jpg'
@@ -13,7 +13,7 @@ export default function MainSection() {
 					priority='true'
 				/>
 			</div>
-			<div className='md:flex space-x-20'>
+			<div className='space-x-20 md:flex'>
 				<div className='md:w-2/5 lg:w-[350px]'>
 					<h2 className='font-bigShoulder uppercase text-headingM lg:text-headingXM font-black my-7 lg:my-14 lg:w-[280px]'>
 						Your Day <br className='lg:hidden' />
@@ -34,7 +34,7 @@ export default function MainSection() {
 						priority='true'
 					/>
 				</div>
-				<div className='hidden md:w-2/3 lg:block'>
+				<div className='right-0 hidden lg:w-2/3 lg:block'>
 					<Image
 						src='/desktop/image-grid-1.jpg'
 						width={635}
@@ -45,7 +45,7 @@ export default function MainSection() {
 					/>
 				</div>
 			</div>
-			<div className='md:flex md:gap-3 my-3 lg:gap-6 lg:my-6'>
+			<div className='my-3 md:flex md:gap-3 lg:gap-6 lg:my-6'>
 				<div className='my-5 md:hidden'>
 					<Image
 						src='/mobile/image-grid-2.jpg'
@@ -108,10 +108,10 @@ export default function MainSection() {
 						/>
 					</div>
 					<div className='bg-almostBlack text-white px-6 lg:px-10 py-10 md:w-[280px] lg:w-[445px] md:h-full md:flex-auto'>
-						<h2 className='uppercase font-bigShoulder font-black text-headingM lg:text-headingXM my-5 md:my-8'>
+						<h2 className='my-5 font-black uppercase font-bigShoulder text-headingM lg:text-headingXM md:my-8'>
 							Come &amp; Be Inspired
 						</h2>
-						<p className='font-outfit font-light text-bodyS lg:text-bodyM md:pt-2'>
+						<p className='font-light font-outfit text-bodyS lg:text-bodyM md:pt-2'>
 							We’re excited to welcome you to our gallery and see how our
 							collections influence you.
 						</p>

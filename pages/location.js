@@ -3,7 +3,7 @@ import LocationMap from '../components/LocationMap';
 
 const Location = () => {
 	return (
-		<>
+		<div className=''>
 			<LocationMap />
 			{/* <div className='w-screen bg-center bg-no-repeat bg-mobileMap sm:bg-tabletMap md:bg-desktopMap h-550 md:h-600'>
 				<ButtonB path='/' title='Back to Home' />
@@ -32,7 +32,7 @@ const Location = () => {
 				</div>
 			</div>
 			<FooterB />
-		</>
+		</div>
 	);
 };
 
