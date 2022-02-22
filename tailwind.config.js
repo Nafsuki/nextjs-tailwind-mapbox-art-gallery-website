@@ -6,7 +6,7 @@ module.exports = {
 	],
 	theme: {
 		fontFamily: {
-			bigShoulder: ['Big Shoulders Display', 'cursive'],
+			bigShoulder: ['Big Shoulders Display'],
 			outfit: ['Outfit', 'sans-serif'],
 		},
 		extend: {

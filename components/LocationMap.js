@@ -11,8 +11,6 @@ export default function LocationMap() {
 					latitude: 41.48131,
 					zoom: 14,
 					scrollZoom: false,
-					touchPitch: false,
-					touchZoomRotate: false,
 				}}
 				width='100%'
 				height='100%'
