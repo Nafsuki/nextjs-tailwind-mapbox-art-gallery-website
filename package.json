@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.27",
     "mapbox-gl": "^2.7.0",
     "next": "^12.1.0",
     "react": "17.0.2",
