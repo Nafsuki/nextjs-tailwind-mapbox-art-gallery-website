@@ -52,6 +52,10 @@ export default function HeroSection() {
           find out.
         </p>
         <ButtonA path="/location" title="Our Location" />
+        {/* <br />
+        <ButtonA path="/classes" title="Our Classes" />
+        <br />
+        <ButtonA path="/promotions" title="Promotions" /> */}
       </div>
     </div>
   );
