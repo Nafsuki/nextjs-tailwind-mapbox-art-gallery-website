@@ -9,6 +9,7 @@ export default function MainSection() {
           width={343}
           height={320}
           layout="responsive"
+          objectFit="cover"
           alt="main grid image mobile 1"
           priority="true"
         />
@@ -30,6 +31,7 @@ export default function MainSection() {
             width={398}
             height={400}
             layout="responsive"
+            objectFit="cover"
             alt="main grid image tablet 1"
             priority="true"
           />
@@ -39,6 +41,7 @@ export default function MainSection() {
             src="/desktop/image-grid-1.jpg"
             width={635}
             height={400}
+            objectFit="cover"
             layout="responsive"
             alt="main grid image desktop 1"
             priority="true"
@@ -51,6 +54,7 @@ export default function MainSection() {
             src="/mobile/image-grid-2.jpg"
             width={343}
             height={480}
+            objectFit="cover"
             layout="responsive"
             alt="main grid image mobile 2"
             priority="true"
@@ -61,6 +65,7 @@ export default function MainSection() {
             src="/tablet/image-grid-2.jpg"
             width={398}
             height={720}
+            objectFit="cover"
             layout="responsive"
             alt="main grid image tablet 2"
             priority="true"
@@ -71,6 +76,7 @@ export default function MainSection() {
             src="/desktop/image-grid-2.jpg"
             width={635}
             height={720}
+            objectFit="cover"
             layout="responsive"
             alt="main grid image desktop 2"
             priority="true"
@@ -81,6 +87,7 @@ export default function MainSection() {
             src="/mobile/image-grid-3.jpg"
             width={343}
             height={200}
+            objectFit="cover"
             layout="responsive"
             alt="main grid image mobile 3"
             priority="true"
@@ -92,6 +99,7 @@ export default function MainSection() {
               src="/tablet/image-grid-3.jpg"
               width={280}
               height={313}
+              objectFit="cover"
               layout="responsive"
               alt="main grid image tablet 3"
               priority="true"
@@ -102,6 +110,7 @@ export default function MainSection() {
               src="/desktop/image-grid-3.jpg"
               width={445}
               height={313}
+              objectFit="cover"
               layout="responsive"
               alt="main grid image desktop 3"
               priority="true"

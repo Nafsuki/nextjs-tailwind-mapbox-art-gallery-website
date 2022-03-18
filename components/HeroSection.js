@@ -3,19 +3,31 @@ import ButtonA from "../components/ButtonA";
 
 export default function HeroSection() {
   return (
-    <div className="sm:relative lg:flex">
+    <div className="sm:relative lg:flex bg-stone-900">
       <div className="hidden lg:relative lg:block lg:bg-almostBlack lg:w-[990px] lg:h-[800px] lg:bg-desktopHero lg:bg-no-repeat lg:bg-right">
-        <h1 className="absolute top-[189px] left-[165px] mix-blend-exclusion font-black w-screen text-white font-bigShoulder uppercase text-headingXL">
+        {/* <h1 className="absolute top-[189px] left-[165px] mix-blend-exclusion font-black w-screen text-white font-bigShoulder uppercase text-headingXL">
           Modern
           <br />
           Art Gallery
-        </h1>
+        </h1> */}
+        
       </div>
-      <div className="hidden lg:block lg:absolute lg:top-[189px] lg:right-0 lg:mr-16 xl:mr-40">
-        <p className="font-outfit text-darkGray font-light text-bodyM w-[350px] mb-20">
-          The arts in the collection of the Modern Art Gallery all started from
-          a spark of inspiration. Will these pieces inspire you? Visit us and
-          find out.
+      <div className="hidden lg:block lg:absolute lg:top-[189px] lg:right-0 lg:mr-6 xl:mr-10">
+        <div className="p-[0px] border-2 border-white">
+          <div className="ml-[30px] mt-[40px]">
+          <Image
+            src="/desktop/logo.png"
+            width={500}
+            height={170}
+            // layout="responsive"
+            alt="Latin Shine Dance Company Logo"
+            priority="true"
+            />
+            </div>
+            <p className='ml-[76px] text-white font-light text-bodyM mb-20'>Dance classes in High Wycombe</p>
+        </div>
+        <p className="font-outfit text-white font-light text-bodyM w-[550px] mb-10">
+          Fun and friendly Latin dance classes in High Wycombe, Buckinghamshire
         </p>
         <ButtonA path="/location" title="Our Location" />
       </div>
@@ -52,6 +64,7 @@ export default function HeroSection() {
           find out.
         </p>
         <ButtonA path="/location" title="Our Location" />
+        
         {/* <br />
         <ButtonA path="/classes" title="Our Classes" />
         <br />
