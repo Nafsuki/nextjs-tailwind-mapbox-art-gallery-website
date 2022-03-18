@@ -1,6 +1,8 @@
 import Image from "next/image";
+import text from "../config/text.json";
 
 export default function MainSection() {
+  const { main } = text;
   return (
     <main className="px-4 py-20 my-12 md:px-8 lg:px-40 lg:my-20">
       <div className="md:hidden">
@@ -17,12 +19,10 @@ export default function MainSection() {
       <div className="space-x-20 md:flex">
         <div className="md:w-2/5 lg:w-[350px]">
           <h2 className="font-bigShoulder uppercase text-headingM lg:text-headingXM font-black my-7 lg:my-14 lg:w-[280px]">
-            Your Day <br className="lg:hidden" />
-            at the Gallery
+            {main.top}
           </h2>
           <p className="my-8 text-bodyS text-darkGray lg:text-bodyM lg:w-[350px]">
-            Wander through our distinct collections and find new insights about
-            our artists. Dive into the details of their creative process.
+            {main.description}
           </p>
         </div>
         <div className="hidden md:block md:w-2/3 lg:hidden">
@@ -118,11 +118,10 @@ export default function MainSection() {
           </div>
           <div className="bg-almostBlack text-white px-6 lg:px-10 py-10 md:w-[280px] lg:w-[445px] md:h-full md:flex-auto">
             <h2 className="my-5 font-black uppercase font-bigShoulder text-headingM lg:text-headingXM md:my-8">
-              Come &amp; Be Inspired
+              {main.text}
             </h2>
             <p className="font-light font-outfit text-bodyS lg:text-bodyM md:pt-2">
-              We’re excited to welcome you to our gallery and see how our
-              collections influence you.
+              {main.final}
             </p>
           </div>
         </div>
