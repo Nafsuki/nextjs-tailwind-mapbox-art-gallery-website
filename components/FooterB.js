@@ -1,19 +1,20 @@
 import Link from "next/link";
+import text from "../config/text.json";
 
 export default function FooterB() {
+  const { footer } = text;
   return (
     <footer className="flex flex-col md:flex-row bg-gold text-almostBlack px-8 py-10 md:py-20 lg:py-30 lg:px-40 justify-between md:items-start">
       <h3
         className="text-bodyM font-black uppercase font-bigShoulder cursor-pointer"
         style={{ lineHeight: "1.5rem" }}
       >
-        Modern
+        {footer.line1}
         <br />
-        Art Gallery
+        {footer.line2}
       </h3>
       <p className="my-12 md:m-0 font-light font-outfit text-bodyXS md:text-bodyS md:w-2/5">
-        The Modern Art Gallery is free to all visitors and open seven days a
-        week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        {footer.description}
       </p>
       <div className="flex gap-5 items-center">
         <Link href="https://www.facebook.com/" passHref>

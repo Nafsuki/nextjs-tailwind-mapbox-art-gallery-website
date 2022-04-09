@@ -2,8 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import ButtonB from './ButtonB';
 import ScrollDownIcon from './ScrollDownIcon';
 import { Wrapper, Status } from '@googlemaps/react-wrapper';
-
-const center = { lat: 51.628251252028704, lng: -0.7512566406302787 };
+const center = { lat: 51.62945971678308, lng: -0.7514637303734821 };
 
 const render = (status) => {
   const zoom = 17;

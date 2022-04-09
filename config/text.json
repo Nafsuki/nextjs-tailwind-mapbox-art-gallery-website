@@ -1,8 +1,8 @@
 {
   "hero": {
-    "heading": "Bachata & Salsa Classes_Every Wednesday_7pm - 10pm!",
-    "logoText": "Dance classes in High Wycombe",
-    "description": "Fun and friendly Latin dance classes in High Wycombe, Buckinghamshire"
+    "heading": "Bachata Sensual Classes_Every Wednesday_7pm - 10pm!_New Course Starting on_4th May 2022!",
+    "logoText": "Bachata classes in High Wycombe",
+    "description": ""
   },
   "main": {
     "top": "All Levels Welcome",
@@ -10,12 +10,18 @@
     "text": "Free Intro lesson",
     "final": "For all new joiners, we offer a first class for free."
   },
-  "location": {
+  "locationCopy": {
     "title": "Our Location",
-    "street": "Riverside",
-    "body1": "High Wycombe",
-    "body2": "HP11 9LL",
-    "body3": "buckinghamshire",
-    "body4": "Our weekly classes and social is located near the Swan Theatre at The Riverside, Legion Hall, St Mary St, High Wycombe HP11 2HE."
+    "street": "Guildhall",
+    "body1": "High Street",
+    "body2": "High Wycombe",
+    "body3": "HP11 2AG",
+    "body4": "Bucks",
+    "description": "Bachata Sensual Classes every Wednesday! 7pm - 10pm! New Course Starting on 4th May 2022!"
+  },
+  "footer": {
+    "line1": "Bachata Sensual in High Wycombe",
+    "line2": "Dance Classes Every Wednesday",
+    "description": "Professional Instructor, All Levels Welcome"
   }
 }

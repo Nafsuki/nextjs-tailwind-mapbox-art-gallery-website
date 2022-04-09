@@ -1,7 +1,9 @@
 import FooterB from "../components/FooterB";
 import LocationMap from "../components/LocationMap";
+import text from "../config/text.json";
 
 const Location = () => {
+  const { locationCopy } = text;
   return (
     <div className="">
       <LocationMap />
@@ -11,22 +13,21 @@ const Location = () => {
 
       <div className="px-4 py-10 bg-almostBlack md:px-8 lg:px-40 md:py-24 md:flex md:space-x-24 lg:justify-between">
         <h2 className="mt-5 mb-12 font-black text-white uppercase font-bigShoulder text-headingM md:text-headingMM lg:text-headingL lg:w-350 md:mt-0">
-          Our Location
+          {locationCopy.title}
         </h2>
         <div className="space-y-7 lg:w-2/5">
           <h4 className="font-black uppercase font-bigShoulder text-gold text-headingXS">
-            99 King Street
+            {locationCopy.street}
           </h4>
           <div className="space-y-1 font-light text-white font-outfit text-bodyS">
             <div className="my-5">
-              <p>Newport</p>
-              <p>RI 02840</p>
-              <p>United States of America</p>
+              <p>{locationCopy.body1}</p>
+              <p>{locationCopy.body2}</p>
+              <p>{locationCopy.body3}</p>
+              <p>{locationCopy.body4}</p>
             </div>
             <p className="my-8">
-              Our newly opened gallery is located near the Edward King House on
-              99 King Street, the Modern Art Gallery is free to all visitors and
-              open seven days a week from 8am to 9pm.
+              {locationCopy.description}
             </p>
           </div>
         </div>
