@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.27",
+    "@mailchimp/mailchimp_marketing": "^3.0.74",
     "mapbox-gl": "^2.7.0",
     "next": "^12.1.0",
     "react": "17.0.2",
