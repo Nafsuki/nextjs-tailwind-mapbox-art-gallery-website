@@ -4,7 +4,7 @@ import text from "../config/text.json";
 export default function FooterB() {
   const { footer } = text;
   return (
-    <footer className="flex flex-col md:flex-row bg-gold text-almostBlack px-8 py-10 md:py-20 lg:py-30 lg:px-40 justify-between md:items-start">
+    <footer className="flex flex-col md:flex-row bg-shine text-white px-8 py-10 md:py-20 lg:py-30 lg:px-40 justify-between md:items-start">
       <h3
         className="text-bodyM font-black uppercase font-bigShoulder cursor-pointer"
         style={{ lineHeight: "1.5rem" }}
@@ -19,7 +19,7 @@ export default function FooterB() {
       <div className="flex gap-5 items-center">
         <Link href="https://www.facebook.com/" passHref>
           <svg
-            className="fill-almostBlack hover:fill-white  transition-colors cursor-pointer"
+            className="fill-white hover:fill-almostBlack  transition-colors cursor-pointer"
             width="20"
             height="20"
             xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ export default function FooterB() {
         </Link>
         <Link href="https://www.instagram.com/" passHref>
           <svg
-            className="fill-almostBlack hover:fill-white transition-colors cursor-pointer"
+            className="fill-white hover:fill-almostBlack transition-colors cursor-pointer"
             width="20"
             height="20"
             xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ export default function FooterB() {
         </Link>
         <Link href="https://twitter.com/" passHref>
           <svg
-            className="fill-almostBlack hover:fill-white transition-colors cursor-pointer"
+            className="fill-white hover:fill-almostBlack transition-colors cursor-pointer"
             width="20"
             height="17"
             xmlns="http://www.w3.org/2000/svg"

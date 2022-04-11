@@ -59,6 +59,7 @@ function MyMapComponent({ center, zoom, children }) {
     setMap(new window.google.maps.Map(ref.current, {
       center,
       zoom,
+      mapTypeControl: false,
     }));
   }, [ref, map]);
 
@@ -82,7 +83,7 @@ export default function LocationMap() {
         apiKey={process.env.NEXT_PUBLIC_MAP_API}
         render={render}>
       </Wrapper>
-      <ScrollDownIcon />
+      {/* <ScrollDownIcon /> */}
       <ButtonB path="/" title="Back to Home" />
       
     </div>

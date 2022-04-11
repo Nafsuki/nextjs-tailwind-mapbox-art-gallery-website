@@ -1,1 +1,11 @@
-<svg width="66" height="88" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 56V0h66v56H45L33 88 21 56H0Z" fill="#151515"/><circle fill="#D5966C" cx="33" cy="28" r="12"/></g></svg>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 88" width="66" height="88">
+	<title>icon-location-svg</title>
+	<style>
+		.s0 { fill: #151515 } 
+		.s1 { fill: #bb0546 } 
+	</style>
+	<g id="Layer">
+		<path id="Layer" fill-rule="evenodd" class="s0" d="m0 56v-56h66v56h-21l-12 32-12-32z"/>
+		<circle id="Layer" class="s1" cx="33" cy="28" r="12"/>
+	</g>
+</svg>

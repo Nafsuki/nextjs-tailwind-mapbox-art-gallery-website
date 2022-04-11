@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row bg-almostBlack dark:bg-gold text-white dark:text-almostBlack px-8 py-10 md:py-20 lg:py-30 lg:px-40 justify-between md:items-start">
+    <footer className="flex flex-col md:flex-row bg-almostBlack dark:bg-shine text-white dark:text-almostBlack px-8 py-10 md:py-20 lg:py-30 lg:px-40 justify-between md:items-start">
       <h3
         className="text-bodyM font-black uppercase font-bigShoulder cursor-pointer"
         style={{ lineHeight: '1.5rem' }}>
@@ -11,14 +11,14 @@ export default function Footer() {
         Dance Company
       </h3>
       <p className="my-12 md:m-0 font-light font-outfit text-bodyXS md:text-bodyS md:w-2/5">
-        Latin Shine - come and join us for weekly Bachata and Salsa classes in
+        Latin Shine - come and join us for weekly Bachata classes in
         High Wycombe, Buckinghamshire.
       </p>
       <div className="gap-5">
         <div className="row flex flex-row gap-5 justify-center">
           <Link href="https://www.facebook.com/LatinShineDance" passHref>
             <svg
-              className="fill-white dark:fill-almostBlack dark:hover:fill-white hover:fill-gold transition-colors cursor-pointer"
+              className="fill-white dark:fill-almostBlack dark:hover:fill-white hover:fill-shine transition-colors cursor-pointer"
               width="20"
               height="20"
               xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,7 @@ export default function Footer() {
           </Link>
           <Link href="https://www.instagram.com/latinshinedance/" passHref>
             <svg
-              className="dark:fill-almostBlack dark:hover:fill-white fill-white hover:fill-gold transition-colors cursor-pointer"
+              className="dark:fill-almostBlack dark:hover:fill-white fill-white hover:fill-shine transition-colors cursor-pointer"
               width="20"
               height="20"
               xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +36,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-row">
-          <a className="hover:underline hover:text-gold" href="mailto:latinshinedance@outlook.com?subject = Website&body = Hi Latin Shine,">
+          <a className="hover:underline hover:text-shine" href="mailto:latinshinedance@outlook.com?subject = Website&body = Hi Latin Shine,">
             latinshinedance@outlook.com
           </a>
         </div>

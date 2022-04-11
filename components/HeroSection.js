@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ButtonA from '../components/ButtonA';
+import HeroLogo from '../components/HeroLogo';
 import text from '../config/text.json';
 
 export default function HeroSection() {
@@ -8,7 +9,7 @@ export default function HeroSection() {
     <div className="sm:relative lg:flex bg-custom-stone">
       <div className="hidden lg:relative lg:block lg:bg-almostBlack lg:w-[990px] lg:h-[800px] lg:bg-desktopHero lg:bg-no-repeat lg:bg-right lg:bg-cover">
         {/* <h1 className="absolute top-[189px] left-[165px] mix-blend-exclusion font-black w-screen text-white font-bigShoulder uppercase text-headingL"> */}
-        <h1 className="absolute top-[289px] left-[165px] font-black w-screen text-white font-bigShoulder uppercase text-headingM">
+        <h1 className="absolute top-[289px] left-[85px] font-black w-screen text-white font-bigShoulder uppercase text-headingM">
           {hero.heading.split('_').map((item, id) => {
             return (
               <p key={`item-${id}`} className="lg:p-2 drop-shadow-3xl">
@@ -18,27 +19,7 @@ export default function HeroSection() {
           })}
         </h1>
       </div>
-      <div className="hidden lg:block lg:absolute lg:top-[189px] lg:right-0 lg:mr-6 xl:mr-10">
-        <div className="p-[0px] border-2 border-white">
-          <div className="ml-[30px] mt-[40px]">
-            <Image
-              src="/desktop/logo.png"
-              width={500}
-              height={170}
-              // layout="responsive"
-              alt="Latin Shine Dance Company Logo"
-              priority="true"
-            />
-          </div>
-          <p className="ml-[76px] text-white font-light text-bodyM mb-20">
-            {hero.logoText}
-          </p>
-        </div>
-        <p className="font-outfit text-white font-light text-bodyM w-[550px] mb-10">
-          {hero.description}
-        </p>
-        <ButtonA path="/location" title="Our Location" />
-      </div>
+      <HeroLogo hero={hero} />
 
       <div className="sm:hidden">
         <Image
@@ -60,15 +41,48 @@ export default function HeroSection() {
           priority="true"
         />
       </div>
-      <div className="px-4 py-10 sm:absolute sm:top-[145px] sm:left-1/2 lg:static lg:hidden">
-        <h1 className="font-black w-screen text-almostBlack font-bigShoulder uppercase text-headingXM md:text-headingL">
-          {hero.heading}
+      <div className="px-4 py-10 sm:absolute sm:top-[45px] sm:left-1/2 lg:static lg:hidden">
+        <div className="p-[0px] border-2 border-white mb-10 w-[290px]">
+          <div className="ml-[20px] mt-[15px] s:mx-auto">
+            <Image
+              src="/tablet/logo.png"
+              width={250}
+              height={95}
+              // layout="responsive"
+              alt="Latin Shine Dance Company Logo"
+              priority="true"
+            />
+          </div>
+        </div>
+        <h1 className="font-black w-screen text-white font-bigShoulder uppercase text-headingS md:text-headingS">
+          {hero.heading.split('_').map((item, id) => {
+              return (
+                <p key={`item-${id}`}>
+                  {item}
+                </p>
+              );
+            })}
         </h1>
-        <p className="font-outfit text-darkGray font-light text-bodyS py-8 sm:py-12 sm:w-[280px] md:w-[340px]">
-          {hero.description}
-        </p>
+        <div className="font-outfit text-white font-light text-bodyS py-8 sm:py-12 sm:w-[280px] md:w-[340px]">
+          {hero.logoText.split('_').map((item, id) => {
+              return (
+                <p key={`item-${id}`}>
+                  {item}
+                </p>
+              );
+            })}
+            {hero.logoWhite.split('_').map((item, id) => {
+              return (
+                <p key={`item-${id}`}>
+                  {item}
+                </p>
+              );
+            })}
+        </div>
+        
         <ButtonA path="/location" title="Our Location" />
-
+        <br />
+        <ButtonA path="/reserve" title="Reserve your spot" />
         {/* <br />
         <ButtonA path="/classes" title="Our Classes" />
         <br />

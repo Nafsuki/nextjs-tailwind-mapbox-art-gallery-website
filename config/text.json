@@ -1,14 +1,15 @@
 {
   "hero": {
-    "heading": "Bachata Sensual Classes_Every Wednesday_7pm - 10pm!_New Course Starting on_4th May 2022!",
-    "logoText": "Bachata classes in High Wycombe",
-    "description": ""
+    "heading": "Beginners Course_Starting on_4th May 2022!",
+    "logoText": "BACHATA CLASSES_AT THE GUILDHALL_IN HIGH WYCOMBE",
+    "logoWhite": "EMAIL US IF YOU ARE INTERESTED:",
+    "email": "LATINSHINEDANCE@OUTLOOK.COM"
   },
   "main": {
     "top": "All Levels Welcome",
     "description": "Beginner friendly and professional environment. Meet new people. No partner required. Convenient High Wycombe location.",
-    "text": "Free Intro lesson",
-    "final": "For all new joiners, we offer a first class for free."
+    "text": "Promotion",
+    "final": "Bring a friend to receive one class for free. Offer valid for May course only."
   },
   "locationCopy": {
     "title": "Our Location",
@@ -22,6 +23,6 @@
   "footer": {
     "line1": "Bachata Sensual in High Wycombe",
     "line2": "Dance Classes Every Wednesday",
-    "description": "Professional Instructor, All Levels Welcome"
+    "description": "Latin Shine - come and join us for weekly Bachata classes in High Wycombe, Buckinghamshire."
   }
 }

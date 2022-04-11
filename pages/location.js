@@ -16,7 +16,7 @@ const Location = () => {
           {locationCopy.title}
         </h2>
         <div className="space-y-7 lg:w-2/5">
-          <h4 className="font-black uppercase font-bigShoulder text-gold text-headingXS">
+          <h4 className="font-black uppercase font-bigShoulder text-shine text-headingXS">
             {locationCopy.street}
           </h4>
           <div className="space-y-1 font-light text-white font-outfit text-bodyS">

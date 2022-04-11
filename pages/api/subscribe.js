@@ -6,7 +6,7 @@ mailchimp.setConfig({
 });
 
 export default async (req, res) => {
-  const { email } = req.body;
+  const { email, firstName, lastName } = req.body;
 
   if (!email) {
     return res.status(400).json({ error: 'Email is required' });
@@ -15,9 +15,12 @@ export default async (req, res) => {
   try {
     await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
       email_address: email,
+      "merge_fields": {
+        "FNAME": firstName,
+        "LNAME": lastName
+      },
       status: 'subscribed',
     });
-
     return res.status(201).json({ error: '' });
   } catch (error) {
     return res.status(500).json({ error: error.message || error.toString() });

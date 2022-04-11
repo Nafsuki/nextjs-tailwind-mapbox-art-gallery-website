@@ -12,7 +12,8 @@ module.exports = {
 		extend: {
 			backgroundColor: {
 				'custom-stone': '#151515',
-				'shine': '#bb0546'
+				'shine': '#bb0546',
+				'shineDark': '#610324',
 			},
 			dropShadow: {
 				'3xl': '0 5px 2px rgba(0, 0, 0, 0.9)',
@@ -21,12 +22,13 @@ module.exports = {
 				mobileMap: "url('/mobile/image-map.png')",
 				tabletMap: "url('/tablet/image-map.png')",
 				desktopMap: "url('/desktop/image-map.png')",
-				desktopHero: "url('/desktop/image-hero.jpg')",
+				desktopHero: "url('/desktop/image-hero.jpg');",
 			},
 			colors: {
 				gold: '#D5966C',
 				almostBlack: '#151515',
 				darkGray: '#444444',
+				shine: '#bb0546'
 			},
 			width: {
 				btn: '260px',

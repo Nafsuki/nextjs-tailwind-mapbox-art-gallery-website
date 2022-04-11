@@ -18,7 +18,7 @@ export default function MainSection() {
       </div>
       <div className="space-x-20 md:flex">
         <div className="md:w-2/5 lg:w-[350px]">
-          <h2 className="font-bigShoulder uppercase text-headingM lg:text-headingXM font-black my-7 lg:my-14 lg:w-[280px]">
+          <h2 className="font-bigShoulder uppercase text-headingS lg:text-headingS font-black my-7 lg:my-14 lg:w-[280px]">
             {main.top}
           </h2>
           <p className="my-8 text-bodyS text-darkGray lg:text-bodyM lg:w-[350px]">
@@ -117,7 +117,7 @@ export default function MainSection() {
             />
           </div>
           <div className="bg-almostBlack text-white px-6 lg:px-10 py-10 md:w-[280px] lg:w-[445px] md:h-full md:flex-auto">
-            <h2 className="my-5 font-black uppercase font-bigShoulder text-headingM lg:text-headingXM md:my-8">
+            <h2 className="my-5 font-black uppercase font-bigShoulder text-headingS lg:text-headingS md:my-8">
               {main.text}
             </h2>
             <p className="font-light font-outfit text-bodyS lg:text-bodyM md:pt-2">

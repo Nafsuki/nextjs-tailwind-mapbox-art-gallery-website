@@ -17,7 +17,7 @@ export default function VideoHero() {
       </video>
       <div className="hidden lg:relative lg:block lg:w-[990px] lg:h-[800px] lg:bg-no-repeat lg:bg-right">
         <h2 className="absolute top-[189px] left-[165px] mix-blend-exclusion font-black w-screen text-white font-bigShoulder uppercase text-headingM">
-          Salsa & Bachata Classes
+          Bachata Classes
           <br />
           In High Wycombe
         </h2>
