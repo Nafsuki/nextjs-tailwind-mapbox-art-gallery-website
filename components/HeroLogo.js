@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ButtonA from '../components/ButtonA';
+import SocialIcons from './SocialIcons';
 
 const HeroLogo = ({hero}) => {
   const emailLink = `mailto:${hero.email}?subject=Interested!`;

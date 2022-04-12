@@ -1,12 +1,16 @@
 import Image from 'next/image';
-import ButtonA from '../components/ButtonA';
-import HeroLogo from '../components/HeroLogo';
+import ButtonA from './ButtonA';
+import HeroLogo from './HeroLogo';
+import SocialIcons from './SocialIcons';
 import text from '../config/text.json';
 
 export default function HeroSection() {
   const { hero } = text;
   return (
     <div className="sm:relative lg:flex bg-custom-stone">
+      <div className='absolute top-10 lg:right-20 sm:right-12'>
+        <SocialIcons />
+      </div>
       <div className="hidden lg:relative lg:block lg:bg-almostBlack lg:w-[990px] lg:h-[800px] lg:bg-desktopHero lg:bg-no-repeat lg:bg-right lg:bg-cover">
         {/* <h1 className="absolute top-[189px] left-[165px] mix-blend-exclusion font-black w-screen text-white font-bigShoulder uppercase text-headingL"> */}
         <h1 className="absolute top-[289px] left-[85px] font-black w-screen text-white font-bigShoulder uppercase text-headingM">
