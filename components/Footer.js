@@ -35,7 +35,7 @@ export default function Footer() {
             </svg>
           </Link>
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-row justify-center">
           <a className="hover:underline hover:text-shine" href="mailto:latinshinedance@outlook.com?subject = Website&body = Hi Latin Shine,">
             latinshinedance@outlook.com
           </a>
