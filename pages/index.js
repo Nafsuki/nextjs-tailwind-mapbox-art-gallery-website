@@ -4,6 +4,7 @@ import MainSection from "../components/MainSection";
 import { Instructors } from "../components/Instructors";
 import { CourseInfo } from "../components/CourseInfo";
 import Layout from "../components/Layout";
+import ImageGallery from '../components/ImageGallery';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <CourseInfo />
       {/* <Signup /> */}
       <MainSection />
+      {/* <ImageGallery /> */}
       {/* <Instructors /> */}
     </Layout>
   );

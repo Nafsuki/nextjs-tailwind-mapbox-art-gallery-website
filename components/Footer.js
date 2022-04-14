@@ -17,8 +17,8 @@ export default function Footer() {
       <div className="gap-5">
         <SocialIcons />
         <div className="flex flex-row justify-center">
-          <a className="hover:underline hover:text-shine" href="mailto:latinshinedance@outlook.com?subject = Website&body = Hi Latin Shine,">
-            latinshinedance@outlook.com
+          <a className="hover:underline hover:text-shine" href="mailto:latin_shine@outlook.com?subject = Website&body = Hi Latin Shine,">
+            latin_shine@outlook.com
           </a>
         </div>
       </div>
