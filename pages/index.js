@@ -14,8 +14,8 @@ export default function Home() {
       <CourseInfo />
       {/* <Signup /> */}
       <MainSection />
+      <Instructors />
       {/* <ImageGallery /> */}
-      {/* <Instructors /> */}
     </Layout>
   );
 }
