@@ -12,7 +12,7 @@ export default function MainSection() {
           height={320}
           layout="responsive"
           objectFit="cover"
-          alt="main grid image mobile 1"
+          alt="Dancing Couple"
           priority="true"
         />
       </div>
@@ -32,7 +32,7 @@ export default function MainSection() {
             height={400}
             layout="responsive"
             objectFit="cover"
-            alt="main grid image tablet 1"
+            alt="Dancing Couple"
             priority="true"
           />
         </div>
@@ -43,7 +43,7 @@ export default function MainSection() {
             height={400}
             objectFit="cover"
             layout="responsive"
-            alt="main grid image desktop 1"
+            alt="Dancing Couple"
             priority="true"
           />
         </div>
@@ -56,7 +56,7 @@ export default function MainSection() {
             height={480}
             objectFit="cover"
             layout="responsive"
-            alt="main grid image mobile 2"
+            alt="Footwork of dancing couple"
             priority="true"
           />
         </div>
@@ -67,7 +67,7 @@ export default function MainSection() {
             height={720}
             objectFit="cover"
             layout="responsive"
-            alt="main grid image tablet 2"
+            alt="Footwork of dancing couple"
             priority="true"
           />
         </div>
@@ -78,7 +78,7 @@ export default function MainSection() {
             height={720}
             objectFit="cover"
             layout="responsive"
-            alt="main grid image desktop 2"
+            alt="Footwork of dancing couple"
             priority="true"
           />
         </div>
@@ -89,7 +89,7 @@ export default function MainSection() {
             height={200}
             objectFit="cover"
             layout="responsive"
-            alt="main grid image mobile 3"
+            alt="Couple practising a spin"
             priority="true"
           />
         </div>
@@ -101,7 +101,7 @@ export default function MainSection() {
               height={313}
               objectFit="cover"
               layout="responsive"
-              alt="main grid image tablet 3"
+              alt="Couple practising a spin"
               priority="true"
             />
           </div>
@@ -112,7 +112,7 @@ export default function MainSection() {
               height={313}
               objectFit="cover"
               layout="responsive"
-              alt="main grid image desktop 3"
+              alt="Couple practising a spin"
               priority="true"
             />
           </div>

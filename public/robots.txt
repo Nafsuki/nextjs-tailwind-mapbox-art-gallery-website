@@ -1,0 +1,6 @@
+Sitemap: https://latinshine.co.uk/api/sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*

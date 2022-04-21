@@ -3,7 +3,7 @@ import HeroSection from "../components/HeroSection";
 import MainSection from "../components/MainSection";
 import { Instructors } from "../components/Instructors";
 import { CourseInfo } from "../components/CourseInfo";
-import Layout from "../components/Layout";
+import { Main as Layout } from "../layouts";
 import ImageGallery from '../components/ImageGallery';
 
 export default function Home() {

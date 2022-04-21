@@ -1,15 +1,13 @@
-import Head from "next/head";
-import Footer from "./Footer";
+import { Header } from './Header';
+import Footer from "../components/Footer";
 
-export default function Layout({
+export const Main = ({
   title = "Latin Shine | Dance Company",
   children,
-}) {
+}) => {
   return (
     <div className="w-screen h-screen flex flex-col overflow-x-hidden">
-      <Head>
-        <title>{title}</title>
-      </Head>
+      <Header title={title} />
       {children}
       <Footer />
     </div>

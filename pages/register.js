@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 import { Secondary as Layout } from "../layouts";
 import ButtonC from '../components/ButtonC';
 
-const Reserve = () => {
+const Register = () => {
   const inputEmailEl = useRef(null);
   const inputFirstNameEl = useRef(null);
   const inputLastNameEl = useRef(null);
@@ -33,7 +33,7 @@ const Reserve = () => {
     inputEmailEl.current.value = '';
     inputFirstNameEl.current.value = '';
     inputLastNameEl.current.value = '';
-    setMessage('Success! 🎉 You have reserved your spot! We will contact you shortly.');
+    setMessage('Success! 🎉 You have Registered!');
   }
   return (
     <Layout>
@@ -50,7 +50,7 @@ const Reserve = () => {
               className="text-bodyM font-black uppercase font-bigShoulder cursor-pointer"
               style={{ lineHeight: "1.5rem" }}
             >
-              Reserve your spot!
+              Register!
             </h3>
             <form className="w-full max-w-sm mx-auto">
               <div className="flex items-center border-b border-shine py-2">
@@ -69,7 +69,7 @@ const Reserve = () => {
                 </label>
               </div> */}
               <div className='mx-auto'>
-                <ButtonC title="Reserve" action={subscribe} />
+                <ButtonC title="Register" action={subscribe} />
               </div>
             </form>
           </>
@@ -79,4 +79,4 @@ const Reserve = () => {
   )
 }
 
-export default Reserve;
+export default Register;

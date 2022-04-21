@@ -1,16 +1,13 @@
-import FooterB from "../components/FooterB";
+
 import LocationMap from "../components/LocationMap";
+import { Secondary as Layout } from "../layouts";
 import text from "../config/text.json";
 
 const Location = () => {
   const { locationCopy } = text;
   return (
-    <div className="">
+    <Layout>
       <LocationMap />
-      {/* <div className='w-screen bg-center bg-no-repeat bg-mobileMap sm:bg-tabletMap md:bg-desktopMap h-550 md:h-600'>
-        <ButtonB path='/' title='Back to Home' />
-      </div> */}
-
       <div className="px-4 py-10 bg-almostBlack md:px-8 lg:px-40 md:py-24 md:flex md:space-x-24 lg:justify-between">
         <h2 className="mt-5 mb-12 font-black text-white uppercase font-bigShoulder text-headingM md:text-headingMM lg:text-headingL lg:w-350 md:mt-0">
           {locationCopy.title}
@@ -55,8 +52,7 @@ const Location = () => {
           </div>
         </div>
       </div>
-      <FooterB />
-    </div>
+    </Layout>
   );
 };
 

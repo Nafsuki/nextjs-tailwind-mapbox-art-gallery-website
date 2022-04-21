@@ -53,7 +53,7 @@ export default function HeroSection() {
               width={250}
               height={95}
               // layout="responsive"
-              alt="Latin Shine Dance Company Logo"
+              alt="Latin Shine Dance Company - Tablet Logo"
               priority="true"
             />
           </div>

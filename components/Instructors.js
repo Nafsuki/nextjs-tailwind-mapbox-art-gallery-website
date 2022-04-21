@@ -4,7 +4,6 @@ import text from '../config/text.json';
 
 export const Instructors = () => {
   const { instructors } = text;
-  console.log('instructors', instructors);
   return (
     <main className=" bg-shine text-white px-8 py-10 md:py-20 lg:py-30 lg:px-40 justify-between md:items-start">
         <div className="block lg:flex">
@@ -15,7 +14,7 @@ export const Instructors = () => {
               height={889}
               objectFit="cover"
               layout="responsive"
-              alt="main grid image desktop 3"
+              alt="Latin Shine - instructors - Alyssa and Martin"
               priority="true"
             />
           </div>

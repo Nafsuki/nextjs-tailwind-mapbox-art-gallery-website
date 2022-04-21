@@ -1,6 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import ButtonB from './ButtonB';
-import ScrollDownIcon from './ScrollDownIcon';
 import { Wrapper, Status } from '@googlemaps/react-wrapper';
 const center = { lat: 51.62945971678308, lng: -0.7514637303734821 };
 
@@ -15,11 +13,6 @@ const render = (status) => {
     case Status.SUCCESS:
       return (<MyMapComponent center={center} zoom={zoom}>
         <Marker key={0} position={center} icon={'/icon-location.svg'} />
-        {/* <AnyReactComponent
-            position={center}
-            text="My Marker"
-          /> */}
-        {/* <CustomMarker key={0} position={center} /> */}
       </MyMapComponent>);
   }
 };
@@ -84,9 +77,6 @@ export default function LocationMap() {
         apiKey={process.env.NEXT_PUBLIC_MAP_API}
         render={render}>
       </Wrapper>
-      <ScrollDownIcon />
-      <ButtonB path="/" title="Back to Home" />
-      
     </div>
   );
 }

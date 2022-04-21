@@ -4,7 +4,6 @@ function ButtonB({ path, title }) {
   return (
     <Link href={path} passHref>
       <div
-        onClick={() => console.log("clicked")}
         className="absolute top-0 flex cursor-pointer md:ml-8 lg:ml-40 group h-btn"
       >
         <div className="flex items-center justify-center px-6 transition group-hover:bg-almostBlack bg-shine">
