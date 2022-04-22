@@ -10,9 +10,9 @@ const Reserve = () => {
 
   const [message, setMessage] = useState('');
 
-  const subscribe = async (e) => {
+  const reserve = async (e) => {
     e.preventDefault();
-    const res = await fetch('/api/subscribe', {
+    const res = await fetch('/api/reserve', {
       body: JSON.stringify({
         email: inputEmailEl.current.value,
         firstName: inputFirstNameEl.current.value,
@@ -54,23 +54,21 @@ const Reserve = () => {
             </h3>
             <form className="w-full max-w-sm mx-auto">
               <div className="flex items-center border-b border-shine py-2">
-                <input ref={inputEmailEl} className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="youremail@gmail.com" aria-label="Full name" />
+                <input ref={inputEmailEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="youremail@gmail.com" aria-label="Email Input Field" />
               </div>
               <div className="flex items-center border-b border-shine py-2">
-                <input ref={inputFirstNameEl} className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Your First name" aria-label="Full name" />
+                <input ref={inputFirstNameEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Your First name" aria-label="First Name Input Field" />
               </div>
               <div className="flex items-center border-b border-shine py-2">
-                <input ref={inputLastNameEl} className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Your second name" aria-label="Full name" />
+                <input ref={inputLastNameEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Your second name" aria-label="Last Name Input Field" />
               </div>
               {/* <div className="form-check">
                 <input className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked />
                 <label className="form-check-label inline-block text-gray-800" htmlFor="flexCheckChecked">
-                  Subscribe
+                  reserve
                 </label>
               </div> */}
-              <div className='mx-auto'>
-                <ButtonC title="Reserve" action={subscribe} />
-              </div>
+              <ButtonC title="Reserve" action={reserve} />
             </form>
           </>
         )}
