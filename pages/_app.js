@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
         }} 
       />
       <SessionProvider session={pageProps.session}>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </SessionProvider>
     </>
   );

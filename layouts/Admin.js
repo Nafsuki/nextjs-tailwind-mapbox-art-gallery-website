@@ -8,7 +8,6 @@ export const Admin = ({
   return (
     <div className="w-screen h-screen flex flex-col overflow-x-hidden">
       <Header />
-      <h1>ADMIN PANEL</h1>
       {children}
       <FooterB />
     </div>
