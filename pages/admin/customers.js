@@ -1,5 +1,5 @@
 import prisma from '../../lib/prisma';
-import { Main as Layout } from "../../layouts";
+import { Admin as Layout } from "../../layouts";
 
 export const getStaticProps = async () => {
   const users = await prisma.user.findMany({

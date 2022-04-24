@@ -7,21 +7,23 @@ import text from '../config/text.json';
 export default function HeroSection() {
   const { hero } = text;
   return (
-    <div className="sm:relative lg:flex bg-custom-stone">
+    <div className="sm:relative lg:flex bg-custom-stone overflow-hidden">
       <div className='absolute top-10 lg:right-20 sm:right-12'>
         <SocialIcons />
       </div>
       <div className="hidden lg:relative lg:block lg:bg-almostBlack lg:w-[990px] lg:h-[800px] lg:bg-desktopHero lg:bg-no-repeat lg:bg-right lg:bg-cover">
         {/* <h1 className="absolute top-[189px] left-[165px] mix-blend-exclusion font-black w-screen text-white font-bigShoulder uppercase text-headingL"> */}
-        <h1 className="absolute top-[289px] left-[85px] font-black w-screen text-white font-bigShoulder uppercase text-headingM">
-          {hero.heading.split('_').map((item, id) => {
-            return (
-              <p key={`item-${id}`} className="lg:p-2 drop-shadow-3xl">
-                {item}
-              </p>
-            );
-          })}
-        </h1>
+        <div className="bg-shine-alpha absolute top-[289px] w-[480px]">
+          <h1 className="pl-[85px] font-black w-auto text-white font-bigShoulder uppercase text-headingM">
+            {hero.heading.split('_').map((item, id) => {
+              return (
+                <p key={`item-${id}`} className="lg:p-2 drop-shadow-3xl">
+                  {item}
+                </p>
+              );
+            })}
+          </h1>
+        </div>
       </div>
       <HeroLogo hero={hero} />
 

@@ -5,9 +5,9 @@ import text from '../config/text.json';
 export const Instructors = () => {
   const { instructors } = text;
   return (
-    <main className=" bg-shine text-white px-8 py-10 md:py-20 lg:py-30 lg:px-40 justify-between md:items-start">
+    <main className=" bg-shine text-white px-8 py-10 md:py-20 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
         <div className="block lg:flex">
-          <div className="flex-none w-[445px] h-[889px]">
+          <div className="flex-none w-[300px] md:w-[445px] md:h-[889px] ">
             <Image
               src="/desktop/instructors.jpg"
               width={500}

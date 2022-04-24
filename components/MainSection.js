@@ -4,7 +4,7 @@ import text from "../config/text.json";
 export default function MainSection() {
   const { main } = text;
   return (
-    <main className="px-4 py-20 my-12 md:px-8 lg:px-40 lg:my-20">
+    <main className="px-4 py-20 my-12 md:px-8 lg:px-30 xl:px-40 lg:my-20">
       <div className="md:hidden">
         <Image
           src="/mobile/image-grid-1.jpg"

@@ -37,7 +37,7 @@ const Reserve = () => {
   }
   return (
     <Layout>
-      <main className="text-center bg-almostBlack text-white px-8 py-10 md:py-20 lg:py-30 lg:px-40 justify-between md:items-start">
+      <main className="text-center bg-almostBlack text-white px-8 py-10 md:py-20 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
         {message ? (
           <h3
             className="text-bodyM font-black uppercase font-bigShoulder cursor-pointer"

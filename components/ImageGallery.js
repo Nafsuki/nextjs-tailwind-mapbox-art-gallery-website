@@ -36,7 +36,7 @@ const ImageGallery = () => {
   const [mainImg, setMainImg] = useState(images[0].url);
 
   return (
-    <main className=" bg-white text-almostBlack px-8 py-10 md:py-20 lg:py-30 lg:px-40 justify-between md:items-start">
+    <main className=" bg-white text-almostBlack px-8 py-10 md:py-20 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
       <div>
         <div className="inline-block">
           <h3

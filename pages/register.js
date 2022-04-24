@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 
 import { Secondary as Layout } from "../layouts";
 import ButtonC from '../components/ButtonC';
+import Link from 'next/link';
 
 const Register = (props) => {
   const inputEmailEl = useRef(null);
@@ -47,7 +48,7 @@ const Register = (props) => {
   }
   return (
     <Layout>
-      <main className="text-center bg-almostBlack text-white px-8 py-10 md:py-20 lg:py-30 lg:px-40 justify-between md:items-start">
+      <main className="text-center bg-almostBlack text-white px-8 py-10 md:py-20 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
         {message ? (
           <h3
             className="text-bodyM font-black uppercase font-bigShoulder cursor-pointer"
@@ -81,12 +82,12 @@ const Register = (props) => {
               <div className="flex items-center border-b border-shine py-2">
                 <input ref={inputETelEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Emergency Telephone Number" aria-label="Emergency Contact Telephone Name" />
               </div>
-              {/* <div className="form-check">
-                <input className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked />
-                <label className="form-check-label inline-block text-gray-800" htmlFor="flexCheckChecked">
-                  register
+              <div className="form-check inline-block pt-4">
+                <input className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-400 checked:border-blue-400 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked />
+                <label className="form-check-label block w-full pl-7 text-left text-white" htmlFor="flexCheckChecked">
+                  You agree to the <Link href="/terms"><a className="underline text-white hover:text-shine" target="_self">Terms and Conditions</a></Link> set out by this site, including our Cookie Use.
                 </label>
-              </div> */}
+              </div>
               <ButtonC title="Register" action={register} />
             </form>
           </>

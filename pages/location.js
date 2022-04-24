@@ -8,7 +8,7 @@ const Location = () => {
   return (
     <Layout>
       <LocationMap />
-      <div className="px-4 py-10 bg-almostBlack md:px-8 lg:px-40 md:py-24 md:flex md:space-x-24 lg:justify-between">
+      <div className="px-4 py-10 bg-almostBlack md:px-8 lg:px-30 xl:px-40 md:py-24 md:flex md:space-x-24 lg:justify-between">
         <h2 className="mt-5 mb-12 font-black text-white uppercase font-bigShoulder text-headingM md:text-headingMM lg:text-headingL lg:w-350 md:mt-0">
           {locationCopy.title}
         </h2>
@@ -29,7 +29,7 @@ const Location = () => {
           </div>
         </div>
       </div>
-      <div className="px-4 py-10 bg-white md:px-8 lg:px-40 md:py-24 md:flex md:space-x-24 lg:justify-between">
+      <div className="px-4 py-10 bg-white md:px-8 lg:px-30 xl:px-40 md:py-24 md:flex md:space-x-24 lg:justify-between">
         <h2 className="mt-5 mb-12 font-black text-almostBlack uppercase font-bigShoulder text-headingM md:text-headingMM lg:text-headingL lg:w-350 md:mt-0">
           {locationCopy.gettingHere}
         </h2>
