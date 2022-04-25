@@ -23,6 +23,7 @@ const Customers = (props) => {
     if (!session) {
       router.push('/api/auth/signin');
     }
+    console.log('session', session);
   }, [session, router]);
 
   if (typeof window === 'undefined') return null;
@@ -41,13 +42,30 @@ const Customers = (props) => {
 
 export default Customers;
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps({ req, res }) {
+  const session = await getSession({ req });
+  if (!session) {
+    res.statusCode = 403;
+    return { props: { drafts: [] } };
+  }
+  if (session) {
+    if (session.user.admin === false) {
+      return {
+        redirect: {
+          destination: '/account/profile',
+          permanent: false,
+        },
+      }
+    }
+  }
+
   let users = await prisma.user.findMany({
     where: { paid: false },
     select: {
       email: true,
       paid: true,
       name: true,
+      admin: true,
       createdAt: true,
     },
   });
@@ -58,7 +76,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       users,
-      session: await getSession(context),
+      session,
     },
   };
 }

@@ -1,4 +1,3 @@
-
 import { NextApiHandler } from 'next';
 import NextAuth from 'next-auth';
 import { PrismaAdapter } from '@next-auth/prisma-adapter';
@@ -19,8 +18,12 @@ const options = {
       // e.g. domain, username, password, 2FA token, etc.
       // You can pass any HTML attribute to the <input> tag through the object.
       credentials: {
-        username: { label: "Email", type: "text", placeholder: "bachata_dancer@highwycombe.com" },
-        password: {  label: "Password", type: "password" }
+        username: {
+          label: 'Email',
+          type: 'text',
+          placeholder: 'bachata_dancer@highwycombe.com',
+        },
+        password: { label: 'Password', type: 'password' },
       },
       authorize: async (credentials, req) => {
         // const hostname = `http://${req.headers.host}`;
@@ -30,10 +33,9 @@ const options = {
           const res = await fetch(`${hostname}/api/login`, {
             method: 'POST',
             body: JSON.stringify(credentials),
-            headers: { "Content-Type": "application/json" }
-          })
+            headers: { 'Content-Type': 'application/json' },
+          });
           const user = await res.json();
-          console.log('LOGIN IN???', user);
           if (res.ok && user) {
             if (user.error) {
               // bad credentials
@@ -54,18 +56,22 @@ const options = {
   ],
   callbacks: {
     async session({ session, user, token }) {
-      // console.log("In session", session, user, token);
+      if (token) {
+        session.user.admin = token.admin;
+      }
       return session;
     },
     async jwt({ token, user, account, profile, isNewUser }) {
-        // console.log("In jwt", token, user, account, profile);
-        token.user = user;
-        return token;
-    }
+      token.user = user;
+      if (user) {
+        token.admin = user.admin;
+      }
+      return token;
+    },
   },
   session: {
-    strategy: "jwt"
+    strategy: 'jwt',
   },
   adapter: PrismaAdapter(prisma),
-  secret: process.env.SECRET
-}
+  secret: process.env.SECRET,
+};

@@ -8,10 +8,11 @@ export default async function handle(req, res) {
   // const { email, firstName, lastName, telephone, eName, eContact } = req.body;
 
   // const session = await getSession({ req });
-  const credentials = req.body.username;
+  const email = req.body.username;
+  const password = req.body.password;
   const user = await prisma.user.findUnique({
     where: {
-      email: credentials,
+      email,
     },
   })
   
@@ -21,6 +22,9 @@ export default async function handle(req, res) {
   //     id: 99,
   //   },
   // })
-  if (user) { return res.json(user); };
+  if (user) {
+    // TODO(marcin) > hash play
+    if (user.password === password) return res.json(user); 
+  };
   return res.json({error: true});
 }
